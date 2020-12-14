@@ -18,10 +18,10 @@ console.log('etaUtente' + etaUtente);
 
 if(etaUtente < 19){
   var prezzoMinori = prezzoUniversale - scontoMinori;
-  alert('Sono' +" "+ prezzoMinori);
-}
-
-if(etaUtente > 65){
+  alert('Perfetto,mi faccia fare un rapido calcolo...mhhhh... sono' +" "+ prezzoMinori +" "+ 'euro');
+}else if(etaUtente > 64){
   var prezzoOver = prezzoUniversale - scontoOver;
-  alert('Sono' +" "+ prezzoOver);
+  alert('Perfetto,mi faccia fare un rapido calcolo...mhhhh... sono' +" "+ prezzoOver +" "+ 'euro');
+}else{
+  alert('Perfetto, sono' +" "+ prezzoUniversale);
 }
