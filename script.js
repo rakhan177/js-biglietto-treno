@@ -18,10 +18,13 @@ console.log('etaUtente' + etaUtente);
 
 if(etaUtente < 19){
   var prezzoMinori = prezzoUniversale - scontoMinori;
-  alert('Perfetto,mi faccia fare un rapido calcolo...mhhhh... sono' +" "+ prezzoMinori +" "+ 'euro');
+  var stampMinori = document.getElementById('prezzo');
+  stampMinori.innerText = 'Perfetto,mi faccia fare un rapido calcolo...mhhhh... sono' +" "+ prezzoMinori +" "+ 'euro';
 }else if(etaUtente > 64){
   var prezzoOver = prezzoUniversale - scontoOver;
-  alert('Perfetto,mi faccia fare un rapido calcolo...mhhhh... sono' +" "+ prezzoOver +" "+ 'euro');
+  var stampOver = document.getElementById('prezzo');
+  stampOver.innerText = 'Perfetto,mi faccia fare un rapido calcolo...mhhhh... sono' +" "+ prezzoOver +" "+ 'euro';
 }else{
-  alert('Perfetto, sono' +" "+ prezzoUniversale);
+  var stampOther = document.getElementById('prezzo');
+  stampOther.innerText = 'Perfetto, sono' +" "+ prezzoUniversale;
 }
